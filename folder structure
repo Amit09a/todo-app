@@ -1,0 +1,18 @@
+todo-app/
+│
+├── config/
+│   └── db.js
+├── controllers/
+│   ├── authController.js
+│   └── taskController.js
+├── models/
+│   ├── User.js
+│   └── Task.js
+├── routes/
+│   ├── auth.js
+│   └── tasks.js
+├── middleware/
+│   └── authMiddleware.js
+├── server.js
+├── .env
+└── package.json
