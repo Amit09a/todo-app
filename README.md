@@ -92,10 +92,3 @@ MIT — feel free to use, fork, or improve!
 
 Made by Amit Meena
 ---
-
-## ✅ Final Steps
-
-- Copy that into `README.md`
-- `git add README.md`
-- `git commit -m "Add project README"`
-- `git push`
