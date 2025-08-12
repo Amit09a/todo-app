@@ -13,14 +13,14 @@ app.get('/', (req, res) => {
   res.send('API is working 🚀');
 });
 
-// ✅ Routes
+//  Routes
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/tasks', require('./routes/tasks'));
 
-// ✅ MongoDB Connection & Start Server
+//  MongoDB Connection & Start Server
 mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
-    console.log('✅ MongoDB connected');
-    app.listen(3000, () => console.log('✅ Server is running on port 3000'));
+    console.log('MongoDB connected');
+    app.listen(3000, () => console.log(' Server is running on port 3000'));
   })
-  .catch(err => console.log('❌ MongoDB connection error:', err));
+  .catch(err => console.log('MongoDB connection error:', err));
