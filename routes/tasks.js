@@ -10,7 +10,7 @@ const {
 } = require('../controllers/taskController');
 const authMiddleware = require('../middleware/authMiddleware');
 
-// 🔐 Protect all routes
+//  Protect all routes
 router.use(authMiddleware);
 
 // Use controller methods instead of inline logic
